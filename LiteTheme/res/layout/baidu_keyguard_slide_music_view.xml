@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.internal.keyguard.slide.TransportControlView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/music_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.baidu.internal.keyguard.slide.SpectrumView
+        android:id="@+id/music_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginRight="-100dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:background="@drawable/baidu_keyguard_slide_music_covermask"
+        android:contentDescription="@null"
+        android:visibility="gone" >
+    </ImageView>
+    
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/album_title"
+        android:layout_marginBottom="5dp"
+        android:ellipsize="none"
+        android:fadingEdgeLength="20dip"
+        android:requiresFadingEdge="horizontal"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/album_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/album"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:ellipsize="none"
+        android:fadingEdgeLength="20dip"
+        android:requiresFadingEdge="horizontal"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/album"
+        android:layout_marginRight="58dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/baidu_keyguard_slide_prev"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album"
+        android:layout_marginTop="58dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/baidu_keyguard_slide_play"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/album"
+        android:layout_marginLeft="58dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/baidu_keyguard_slide_next"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</com.baidu.internal.keyguard.slide.TransportControlView>

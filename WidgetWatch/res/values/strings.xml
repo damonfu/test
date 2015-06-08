@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="hello">Hello World, WidgetWatch!</string>
+    <string name="app_name">WidgetWatch</string>
+    <string name="app_name_light">LightWidgetWatch</string>
+    <string name="spinner_1_color_prompt">WidgetWatch</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="one_button">One Button</string>
+    <string name="two_buttons">Two Buttons</string>
+    <string name="three_buttons">Three Buttons</string>
+    <string name="select">Select</string>
+    <string name="progress">Progress</string>
+    <string name="single_choice">Single Choice</string>
+    <string name="multi_choice">Multi Choice</string>
+    <string name="text_entry">Text Entry</string>
+    <string name="enable_all">Enable All</string>
+    <string name="disable_all">Disable All</string>
+    <string name="change_theme">change theme</string>
+    <string name="change_theme_property">com.baidu.widgets.themechange</string>
+    <string name="buttonStyleSmall">buttonStyleSmall</string>
+
+	<string name="buttonStyleRed">  buttonStyleRed  </string>
+	<string name="listButtonStyleRed">listButtonStyleRed</string>
+
+	<string name="buttonStyleGreen">  buttonStyleGreen  </string>
+	<string name="listButtonStyleGreen">listButtonStyleGreen</string>
+
+	<string name="buttonStyle">  buttonStyle  </string>
+	<string name="listButtonStyle">listButtonStyle</string>
+
+	<string name="buttonStyleBlue">  buttonStyleBlue  </string>
+
+    <string name="check_box">Check Box</string>
+    <string name="star">Star</string>
+    <string name="check_text_view">Check Text View</string>
+    <string name="button_radio_1">Button Radio 1</string>
+    <string name="button_radio_2">Button Radio 2</string>
+    <string name="time_dlg">Time</string>
+    <string name="date_dlg">Date</string>
+    <string name="default_progress">Default Progress</string>
+    <string name="second_progress">Second Progress</string>
+    <string name="btn_jian">-</string>
+    <string name="btn_jia">+</string>
+    <string name="show_indeterminate">Show Indeterminate</string>
+    <string name="show_indeterminate_no_title">Show Indeterminate No Title</string>
+    <string name="show_another">Show Another</string>
+    <string name="toggle">Toggle</string>
+    <string name="btnl0">Left 0</string>
+    <string name="btnl1">Left 1</string>
+    <string name="btnl2">Left 2</string>
+    <string name="btnl3">Left 3</string>
+    <string name="btnl4">Left 4</string>
+    <string name="btnr0">Right 0</string>
+    <string name="btnr1">Right 1</string>
+    <string name="btnr2">Right 2</string>
+    <string name="btnr3">Right 3</string>
+    <string name="btnr4">Right 4</string>
+    <string name="btnr5">Enable left title button</string>
+    <string name="btnr6">Disable left title button</string>
+    <string name="btnr7">Enable right title button</string>
+    <string name="btnr8">Disable right title button</string>
+    <string name="button_next">Next</string>
+    <string name="btn_set_right">Set Right</string>
+    <string name="btn_set_left">Set Left</string>
+    <string name="btn_set_center">Set Center</string>
+    <string name="text_color_primary">text_color_primary</string>
+    <string name="text_color_secondary">text_color_secondary</string>
+    <string name="text_color_tertiary">text_color_tertiary</string>
+	<string name="select_all">Select All</string>
+	<string name="unselect_all">Unselect All</string>
+	<string name="mode_none">None</string>
+	<string name="mode_single">Single</string>
+	<string name="mode_multiple">Multiple</string>
+	<string name="show_img_1">Image 1</string>
+	<string name="show_img_2">Image 2</string>
+	<string name="yi_list_item_1">yi_list_item_1:</string>
+	<string name="yi_list_item_2">yi_list_item_2:</string>
+	<string name="yi_list_item_3">yi_list_item_3:</string>
+	<string name="yi_list_item_4">yi_list_item_4:</string>
+	<string name="yi_list_item_5">yi_list_item_5:</string>
+	<string name="yi_list_item_6">yi_list_item_6:</string>
+	<string name="yi_list_item_7">yi_list_item_7:</string>
+	<string name="yi_list_item_8">yi_list_item_8:</string>
+	<string name="yi_list_item_9">yi_list_item_9:</string>
+	<string name="yi_list_item_10">yi_list_item_10:</string>
+	<string name="yi_list_item_11">yi_list_item_11:</string>
+	<string name="yi_list_item_12">yi_list_item_12:</string>
+	<string name="yi_list_item_13">yi_list_item_13:</string>
+    <string name="yi_list_item_14">yi_list_item_14:</string>
+    <string name="function_item">FunctionBar Item</string>
+    <string name="text_app_small">textSmall(11sp)</string>
+    <string name="text_app_normal">textNormal(12sp)</string>
+    <string name="text_app_medium">textMedium(14sp)</string>
+    <string name="text_app_large">textLarge(16sp)</string>
+    <string name="text_app_big">textBig(18sp)</string>
+    <string name="text_app_small_invest">textAppearanceSmallInverse(16px)</string>
+    <string name="text_app_medium_invest">textAppearanceMediumInverse(18px)</string>
+    <string name="text_app_normal_invest">textAppearanceNormalInverse(20px)</string>
+    <string name="text_app_large_invest">textAppearanceLargeInverse(24px)</string>
+    <string name="text_app_big_invest">textAppearanceBigInverse(26px)</string>
+    <string name="txt1">text1</string>
+    <string name="txt2">text2</string>
+    <string name="txt3">text3</string>
+    <string name="txt4">text4</string>
+    <string name="yi_text_grey1">yi_text_grey1</string>
+    <string name="yi_text_grey2">yi_text_grey2</string>
+    <string name="yi_text_red1">yi_text_red1</string>
+    <string name="yi_text_blue1">yi_text_blue1</string>
+    <string name="yi_title">Rice user define title</string>
+    <string name="exporting_contact_list_progress"><xliff:g id="a">%d</xliff:g> of <xliff:g id="b">%d</xliff:g> contacts</string>
+    <string name="normal">normal</string>
+    <string name="add">add</string>
+    <string name="rotation">rotation</string>
+    <string name="text_search">search search searchsearch searchsearchsearch searchsearchsearchsearch searchsearchsearchsearchsearch</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="home">Home</string>
+    <string name="title">Title</string>
+    <string name="as_up">As Up</string>
+    <string name="standard">Standard</string>
+    <string name="list">List</string>
+    <string name="tabs">Tabs</string>
+    <string name="calculator">Calculator</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="zero2">00</string><string name="math_divisor">/</string>
+    <string name="math_minus">-</string>
+    <string name="math_add">+</string>
+    <string name="math_mul">*</string>
+    <string name="math_equal">=</string>
+    <string name="math_hex">Hex</string>
+    <string name="math_cls">Cls</string>
+    <string name="listpopupwindow_normal">ListPopupWindow normal</string>
+    <string name="ListPopupWindow_with_icon">ListPopupWindow with icon</string>
+    <string name="ListPopupWindow_with_2icon">ListPopupWindow with 2icon</string>
+    <string name="ListPopupWindow_with_switch">ListPopupWindow with switch</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="setMin">Set Min</string>
+    <string name="setMax">Set Max</string>
+    <string name="setValue">Set Value</string>
+    <string name="select_item_title">Select Item</string>
+    <string name="select_item_prompt"><xliff:g id="name">%s</xliff:g> selected</string>
+    <string name="delete_dialog_title">Delete Selected Items?</string>
+    <string name="delete_prompt" formatted="false">Will delete %d item(s).</string>
+    <!--string name="test_asset">test_asset in data partition</string -->
+    
+    
+    <string name="test1">test1</string>
+    <string name="test2">test2</string>
+    <string name="test3">test3</string>
+    <string name="show_dialog">Dialog</string>
+    <string name="full_screen">Full Screen</string>
+    <string name="menu_visibility">Hide Menu</string>
+    <string name="trigger_menu">Trigger Menu</string>
+    <string name="fps">FPS</string>
+    <string name="action_more_menu">more</string>
+    <string name="menu_add">add</string>
+    <string name="menu_wallpaper">wallpaper</string>
+    <string name="menu_settings">settings</string>
+
+    <!-- for framework -->
+    <string name="searchview_hint">Find something</string>
+    <string name="cheese_hunt_hint">Cheese hunt</string>
+    <string name="search_go">"Search"</string>
+    <string name="searchview_description_search">"Search"</string>
+    <string name="searchview_description_query">"Search query"</string>
+    <string name="searchview_description_clear">"Clear query"</string>
+    <string name="searchview_description_submit">"Submit query"</string>
+    <string name="searchview_description_voice">"Voice search"</string>
+    <string name="date_time_done">Done</string>
+    <string name="date_picker_dialog_title">Set date</string>
+    <string name="switch_null_text"></string>
+    
+    <string name="ckilTest">multi-selection</string>
+    <string name="custom_view">Custom View</string>
+    <string name="menu_transparent">TransparentMenu</string>
+    <string name="dyn_menu">DynMenu</string>
+    <string name="na">N/A</string>
+    <string name="preference">Preference</string>
+    
+    <!-- time/date picker -->
+    <string name="datepicker">datepiker</string>
+    <string name="timepicker">timepicker</string>
+    
+    <!-- time/date picker -->
+    <string name="expandable">expandable</string>
+</resources>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.internal.keyguard.slide.TargetView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/target_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/target_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/baidu_keyguard_slide_handle" />
+    
+    <LinearLayout
+        android:id="@+id/slide_guide_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/target_handle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/baidu_keyguard_slide_dot_s"/>
+        <ImageView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:src="@drawable/baidu_keyguard_slide_dot_m"/>
+        <ImageView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:src="@drawable/baidu_keyguard_slide_dot_l"/>
+        <ImageView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:src="@drawable/baidu_keyguard_slide_dot_m"/>
+        <ImageView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:src="@drawable/baidu_keyguard_slide_dot_s"/>
+        <ImageView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="4dp"
+        	android:src="@drawable/baidu_keyguard_slide_down"/>
+    </LinearLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/targets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <ImageView
+            android:id="@+id/bg_cicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/baidu_keyguard_slide_bg_circle"
+            android:visibility="gone" />
+        
+        <ImageView
+        android:id="@+id/handle_align"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/baidu_keyguard_slide_handle"
+        android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/target_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/handle_align"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="48dp"
+            android:contentDescription="@null"
+            android:src="@drawable/baidu_keyguard_slide_camera"
+            android:visibility="gone" />
+
+        <!-- <RelativeLayout
+            android:id="@+id/target_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48dp"
+            android:layout_toLeftOf="@id/handle_align"
+            android:visibility="gone" >
+            
+            <TextView
+                android:id="@+id/miss_call_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/image_phone"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/baidu_keyguard_missed_count_bg"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"/>
+
+            <ImageView
+                android:id="@id/image_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baidu_keyguard_slide_phone" />
+
+            
+        </RelativeLayout> -->
+        
+        <ImageView
+            android:id="@+id/target_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48dp"
+            android:layout_toLeftOf="@id/handle_align"
+            android:src="@drawable/baidu_keyguard_slide_phone"
+            android:visibility="gone"/>
+        
+        <TextView
+                android:id="@+id/miss_call_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="16dp"
+                android:minHeight="16dp"
+                android:layout_alignTop="@id/target_phone"
+                android:layout_alignRight="@id/target_phone"
+           	 	android:gravity="center"
+                android:background="@drawable/baidu_keyguard_missed_count_bg"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/target_unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/handle_align"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@null"
+            android:src="@drawable/baidu_keyguard_slide_unlock"
+            android:visibility="gone" />
+        
+       <!--  <RelativeLayout
+            android:id="@+id/target_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="48dp"
+            android:layout_toRightOf="@id/handle_align"
+            android:visibility="gone" >
+            
+            <TextView
+                android:id="@+id/miss_message_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/image_message"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/baidu_keyguard_missed_count_bg"
+                android:contentDescription="@null"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@id/image_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baidu_keyguard_slide_message" />
+        </RelativeLayout> -->
+
+		<ImageView
+		    android:id="@+id/target_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="48dp"
+            android:layout_toRightOf="@id/handle_align"
+            android:src="@drawable/baidu_keyguard_slide_message"
+            android:visibility="gone"/>
+		
+		<TextView
+                android:id="@+id/miss_message_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="16dp"
+                android:minHeight="16dp"
+                android:layout_alignTop="@id/target_message"
+                android:layout_alignRight="@id/target_message"
+            	android:gravity="center"
+                android:background="@drawable/baidu_keyguard_missed_count_bg"
+                android:contentDescription="@null"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/target_ring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:src="@drawable/baidu_keyguard_slide_ring"
+        android:visibility="gone" />
+    
+    <com.baidu.internal.keyguard.slide.CharggingView
+        android:id="@+id/chargging_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        
+        <TextView 
+            android:id="@+id/chargging_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/power_percent"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            />
+        
+        <TextView
+        android:id="@+id/chargging_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:background="@drawable/baidu_keyguard_slide_handle_charge" />
+        
+        <com.baidu.internal.keyguard.slide.BatteryLevelView
+        android:id="@+id/power_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chargging_progress"
+        android:layout_alignLeft="@+id/chargging_progress"
+        android:layout_alignRight="@+id/chargging_progress"
+        android:layout_alignTop="@+id/chargging_progress" />
+        
+        <com.baidu.internal.keyguard.slide.CharggingCircle
+            android:id="@+id/chargging_circle_1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/charge_circle"
+            android:visibility="invisible"/>
+        <com.baidu.internal.keyguard.slide.CharggingCircle
+            android:id="@+id/chargging_circle_2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/charge_circle"
+            android:visibility="invisible"/>    
+            
+       <com.baidu.internal.keyguard.slide.CharggingCircle
+            android:id="@+id/chargging_circle_3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/charge_circle"
+            android:visibility="invisible"/>   
+            
+        <com.baidu.internal.keyguard.slide.CharggingCircle
+            android:id="@+id/chargging_circle_4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/charge_circle"
+            android:visibility="invisible"/>   
+    </com.baidu.internal.keyguard.slide.CharggingView>
+
+</com.baidu.internal.keyguard.slide.TargetView>

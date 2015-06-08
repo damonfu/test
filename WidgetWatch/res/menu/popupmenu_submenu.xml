@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item1" android:title="item1">
+        <item android:id="@+id/submenu1" android:title="submenu1">
+	        <menu>
+	            <item android:id="@+id/submenu1_1" android:title="submenu1_1"/>
+	            <item android:id="@+id/submenu1_2" android:title="submenu1_2"/>
+	        </menu>
+        </item>
+        <item android:id="@+id/submenu2" android:title="submenu2">
+	        <menu>
+	            <item android:id="@+id/submenu2_1" android:title="submenu2_1"/>
+	            <item android:id="@+id/submenu2_2" android:title="submenu2_2"/>
+	        </menu>
+        </item>
+    </item>
+    <group android:id="@+id/group1" android:menuCategory="container">
+        <item android:id="@+id/group1_1" android:title="group1_1" android:enabled="false"></item><item android:id="@+id/group1_2" android:title="group1_2"></item>
+        <item android:id="@+id/group1_3" android:title="group1_3_sub">
+            <menu>
+                <item android:id="@+id/group1_2_1" android:title="group1_2_1"/>
+                <item android:id="@+id/group1_2_2" android:title="group1_2_2"/>
+            </menu>
+        </item>
+        <item android:id="@+id/group1_4" android:title="group1_4"></item>
+        
+    </group>
+    
+
+</menu>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+
+    <item name="left_label" type="id"/>
+    <item name="right_label" type="id"/>
+    <item name="content_area_top" type="id"/>
+    <item name="title_button_group" type="id"/>
+    <item name="image1" type="id"/>
+    <item name="image2" type="id"/>
+    <item name="text1" type="id"/>
+    <item name="text2" type="id"/>
+    <item name="text3" type="id"/>
+    <item name="text4" type="id"/>
+    <item name="progressbar" type="id"/>
+    <item name="ratingbar" type="id"/>
+    <item name="titlecontent" type="id"/>
+    <item name="title_root" type="id"/>
+    <item name="title_corner" type="id"/>
+    <item name="search_layout" type="id"/>
+    <item name="search_text" type="id"/>
+    <item name="search_button" type="id"/>
+    <item name="action_cancel" type="id"/>
+    <item name="action_done" type="id"/>
+    <item name="cancel_image" type="id"/>
+    <item name="cancel_text" type="id"/>
+    <item name="done_image" type="id"/>
+    <item name="done_text" type="id"/>
+
+    <!-- ####################new ui######################## -->
+    <eat-comment />
+
+    <item name="list_menu_presenter" type="id"/>
+    <item name="action_menu_presenter" type="id"/>
+    <item name="action_more_menu" type="id"/>
+    <item name="viewPager" type="id"/>
+    <item name="fps_counter" type="id"/>
+    <item name="action_bar_custom_view" type="id"/>
+    <item name="action_bar_place_holder" type="id"/>
+    <item name="action_bar_title_view" type="id"/>
+    <item name="action_bar_button" type="id"/>
+    <item name="search_back_icon" type="id"/>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_expand"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baidu_keyguard_search"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/expand_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLength="20"
+        android:padding="3dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/hover_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLength="20"
+        android:padding="3dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+</RelativeLayout>

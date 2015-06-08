@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    >
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+    -->
+        <Button xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_alignParentLeft="true" 
+            android:singleLine="true" 
+            android:id="@+id/left_label" 
+            android:gravity="center"
+            android:layout_marginTop="-1dip"
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content"
+            android:maxWidth="70dip"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="0"
+            android:background="?attr/windowTitleButton"
+            style="@style/TextAppearance.BaiduTitleButton" />
+    <!--/LinearLayout>
+</RelativeLayout-->

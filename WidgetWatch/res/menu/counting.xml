@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_test"
+        android:icon="@drawable/cld_contact_add"
+        android:showAsAction="always"
+        android:title="@string/menu_add"/>
+
+    <item
+        android:id="@+id/menu_wallaper"
+        android:icon="@drawable/cld_icon_merge"
+        android:showAsAction="always"
+        android:title="@string/menu_wallpaper"/>
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/cld_icon_search"
+        android:showAsAction="always"
+        android:title="@android:string/search_go"/>
+
+    <item
+        android:id="@+id/dyn_menu"
+        android:title="@string/dyn_menu"/>
+
+    <item
+        android:id="@+id/menu_setting1"
+        android:title="@string/test2"/>
+
+    <item
+        android:id="@+id/menu_setting2"
+        android:title="@string/test3"/>
+
+</menu>

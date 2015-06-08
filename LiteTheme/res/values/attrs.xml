@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WeightedLinearLayout">
+        <attr name="majorWeight" format="float" />
+        <attr name="minorWeight" format="float" />
+    </declare-styleable>
+    <declare-styleable name="ButtonGroup">
+        <attr name="buttonNumber" format="integer" />
+        <attr name="backgroundType" format="integer" />
+        <attr name="background" format="reference|color" />
+        <attr name="buttonText0" format="string" />
+        <attr name="buttonText1" format="string" />
+        <attr name="buttonText2" format="string" />
+        <attr name="buttonText3" format="string" />
+        <attr name="buttonText4" format="string" />
+    </declare-styleable>
+    <declare-styleable name="PopupMenu">
+        <attr name="background" />
+        <attr name="paddingLeft" format="dimension" />
+        <attr name="paddingRight" format="dimension" />
+        <attr name="paddingTop" format="dimension" />
+        <attr name="paddingBottom" format="dimension" />
+        <attr name="itemMargin" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Yi.Theme">
+        <eat-comment />
+
+        <attr name="editTextStyle" format="reference" />
+        <attr name="buttonStyleGreen" format="reference" />
+        <attr name="buttonStyleBlue" format="reference" />
+        <attr name="buttonStyleRed" format="reference" />
+        <attr name="buttonStyleSub" format="reference" />
+        <attr name="listButtonStyle" format="reference" />
+        <attr name="listButtonStyleGreen" format="reference" />
+        <attr name="listButtonStyleRed" format="reference" />
+        <attr name="functionBarStyle" format="reference" />
+        <attr name="functionBarItemStyle" format="reference" />
+        <attr name="functionBarItemRedStyle" format="reference" />
+        <attr name="functionBarItemGreenStyle" format="reference" />
+        <attr name="functionBarItemBlueStyle" format="reference" />
+        <attr name="popupMenuStyle" format="reference" />
+        <attr name="buttonStyleAdd" format="reference" />
+        <attr name="buttonStyleDel" format="reference" />
+        <attr name="indicatorStyleArrowDown" format="reference" />
+        <attr name="indicatorStyleCancel" format="reference" />
+        <attr name="indicatorStyleMore" format="reference" />
+        <attr name="indicatorStyleBlackCancel" format="reference" />
+        <attr name="indicatorStyleArrowRight" format="reference" />
+        <attr name="indicatorStyleInfo" format="reference" />
+        <attr name="indicatorStyleNoti" format="reference" />
+        <attr name="indicatorStylePlus" format="reference" />
+        <attr name="indicatorStylePlay" format="reference" />
+        <attr name="indicatorStyleLayer" format="reference" />
+        <attr name="indicatorStylePause" format="reference" />
+        <attr name="indicatorStyleNew" format="reference" />
+        <attr name="indicatorStyleDraft" format="reference" />
+        <attr name="indicatorStyleDownload" format="reference" />
+        <attr name="indicatorStyleUpdate" format="reference" />
+        <attr name="indicatorStyleNotiSmall" format="reference" />
+        <attr name="indicatorStyleInfoSmall" format="reference" />
+        <attr name="indicatorStyleArrowSmall" format="reference" />
+        <attr name="textEntryStyleShadow" format="reference" />
+        <attr name="textAppearanceBig" format="reference" />
+        <attr name="textAppearanceBigInverse" format="reference" />
+        <attr name="textAppearanceNormal" format="reference" />
+        <attr name="textAppearanceNormalInverse" format="reference" />
+        <attr name="textAppearanceTiny" format="reference" />
+        <attr name="textAppearanceTinyInverse" format="reference" />
+        <attr name="textAppearanceTinyShadow" format="reference" />
+        <attr name="textAppearanceSmallShadow" format="reference" />
+        <attr name="textAppearanceNormalShadow" format="reference" />
+        <attr name="textAppearanceMediumShadow" format="reference" />
+        <attr name="textAppearanceLargeShadow" format="reference" />
+        <attr name="textAppearanceBigShadow" format="reference" />
+        <attr name="switcherPreferenceStyle" format="reference" />
+        <attr name="baiduEditTextStyle" format="reference" />
+        <attr name="searchEditTextStyle" format="reference" />
+        <attr name="searchButtonStyle" format="reference" />
+        <attr name="switcherStyle" format="reference" />
+        <attr name="windowTitleBackground" format="reference" />
+        <attr name="contentAreaTopImage" format="reference" />
+        <attr name="windowTitleButton" format="reference" />
+        <attr name="windowTitleStyleBaidu" format="reference" />
+        <attr name="overscrollEdge" format="reference" />
+        <attr name="overscrollGlow" format="reference" />
+        <attr name="PreferenceCategoryTextStyle" format="reference" />
+        <attr name="titleRightStyleBaidu" format="reference" />
+        <attr name="titleLeftStyleBaidu" format="reference" />
+
+        <!-- =========== -->
+        <!-- new styles 201305 -->
+        <!-- =========== -->
+        <eat-comment />
+
+        <attr name="roundCornerListViewStyle" format="reference" />
+        <attr name="customAlertDialogStyle" format="reference" />
+        <attr name="switchPreferenceStyle" format="reference" />
+        <attr name="hybridMenuStyle" format="reference" />
+        <attr name="actionMenuStyle" format="reference" />
+        <attr name="actionTabBarPortSlid" format="reference" />
+        <attr name="actionTabBarLandSlid" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MultiWaveView">
+
+        <!-- Reference to an array resource that be shown as targets around a circle. -->
+        <attr name="targetDrawables" format="reference" />
+
+        <!-- Reference to an array resource that be used as description for the targets around the circle. -->
+        <attr name="targetDescriptions" format="reference" />
+
+        <!-- Reference to an array resource that be used to announce the directions with targets around the circle. -->
+        <attr name="directionDescriptions" format="reference" />
+
+        <!-- Sets a drawable as the drag center. -->
+        <attr name="handleDrawable" format="reference" />
+
+        <!-- Drawable to use for chevron animation on the left. May be null. -->
+        <attr name="leftChevronDrawable" format="reference" />
+
+        <!-- Drawable to use for chevron animation on the right. May be null. -->
+        <attr name="rightChevronDrawable" format="reference" />
+
+        <!-- Drawable to use for chevron animation on the top. May be null. -->
+        <attr name="topChevronDrawable" format="reference" />
+
+        <!-- Drawable to use for chevron animation on the bottom. May be null. -->
+        <attr name="bottomChevronDrawable" format="reference" />
+
+        <!-- Drawable to use for wave ripple animation. -->
+        <attr name="waveDrawable" format="reference" />
+
+        <!-- Outer radius of target circle. Icons will be drawn on this circle. -->
+        <attr name="outerRadius" format="dimension" />
+
+        <!-- Size of target radius. Points within this distance of target center is a "hit". -->
+        <attr name="hitRadius" format="dimension" />
+
+        <!-- Tactile feedback duration for actions. Set to '0' for no vibration. -->
+        <attr name="vibrationDuration" format="integer" />
+
+        <!-- How close we need to be before snapping to a target. -->
+        <attr name="snapMargin" format="dimension" />
+
+        <!-- Number of waves/chevrons to show in animation. -->
+        <attr name="feedbackCount" format="integer" />
+
+        <!-- Used to shift center of pattern vertically. -->
+        <attr name="verticalOffset" format="dimension" />
+
+        <!-- Used to shift center of pattern horizontally. -->
+        <attr name="horizontalOffset" format="dimension" />
+        <attr name="focusHandles" format="reference" />
+        <attr name="hintString" format="reference" />
+    </declare-styleable>
+
+    <!-- ####################new ui######################## -->
+    <eat-comment />
+    <!-- the set of attributes that describe a RoundCornerListView theme -->
+    <declare-styleable name="RoundCornerListView">
+        <attr name="listSelector" format="color|reference" />
+        <attr name="topListSelector" format="color|reference" />
+        <attr name="bottomListSelector" format="color|reference" />
+        <attr name="singleListSelector" format="color|reference" />
+        <attr name="cornerType">
+
+            <!-- no corner. -->
+            <flag name="none" value="0x0" />
+            <!-- only top item has corner. -->
+            <flag name="top" value="0x1" />
+            <!-- only bottom item has corner. -->
+            <flag name="bottom" value="0x2" />
+            <!-- both top and bottom items has corner. -->
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="HybridMenu">
+        <attr name="hybridMenuShadow" format="color|reference" />
+        <attr name="hybridMenuBackground" format="color|reference" />
+        <attr name="hybridMenuMore" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="ActionMenu">
+        <attr name="actionMenuTextColor" format="color|reference" />
+        <attr name="actionMenuTextShadow" format="color|reference" />
+        <attr name="actionMenuBackground" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ActionTabBarSlid">
+        <attr name="actionTabBarPortSlid" />
+        <attr name="actionTabBarLandSlid" />
+    </declare-styleable>
+    <declare-styleable name="Switch">
+
+        <!-- Drawable to use as the "thumb" that switches back and forth. -->
+        <attr name="pointOn" format="reference" />
+        <attr name="pointOff" format="reference" />
+    </declare-styleable>
+
+</resources>

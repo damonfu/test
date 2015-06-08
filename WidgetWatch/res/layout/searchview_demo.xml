@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </SearchView>
+    
+    <ToggleButton
+        android:id="@+id/iconified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="setIconified True"
+        android:textOff="setIconifiedByDefault False" />
+
+    <ToggleButton
+        android:id="@+id/submitEnableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Submit button enable"
+        android:textOff="Submit button disable" />
+    
+    <ToggleButton
+        android:id="@+id/refineEnableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Refine button enable"
+        android:textOff="Refine button disable" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/hintText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="text" >
+        </EditText>
+
+        <Button
+            android:id="@+id/setHintButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/queryText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="text" >
+        </EditText>
+
+        <Button
+            android:id="@+id/setQueryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+</LinearLayout>

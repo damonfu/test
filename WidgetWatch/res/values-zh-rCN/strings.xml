@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="text_search" formatted="false">百度，全球最大的中文搜索引擎、最大的中文网站。2000年1月创立于北京中关村.1999年底，身在美国硅谷的李彦宏看到了中国互联网及中文搜索引擎服务的巨大发展潜力，抱着技术改变世界的梦想，他毅然辞掉硅谷的高薪工作，携搜索引擎专利技术，于2000年1月1日在中关村创建了百度公司。从最初的不足10人发展至今，员工人数超过18000人。如今的百度，已成为中国最受欢迎、影响力最大的中文网站。
+百度拥有数千名研发工程师，这是中国乃至全球最为优秀的技术团队，这支队伍掌握着世界上最为先进的搜索引擎技术，使百度成为中国掌握世界尖端科学核心技术的中国高科技企业，也使中国成为美国、俄罗斯、和韩国之外，全球仅有的4个拥有搜索引擎核心技术的国家之一。
+从创立之初，百度便将“让人们最平等、便捷地获取信息，找到所求”作为自己的使命，成立以来，公司秉承“以用户为导向”的理念，不断坚持技术创新，致力于为用户提供“简单，可依赖”的互联网搜索产品及服务，其中包括：以网络搜索为主的功能性搜索，以贴吧为主的社区搜索，针对各区域、行业所需的垂直搜索，Mp3搜索，以及门户频道、IM等，全面覆盖了中文网络世界所有的搜索需求，根据第三方权威数据，百度在中国的搜索份额超过80%。
+在面对用户的搜索产品不断丰富的同时，百度还创新性地推出了基于搜索的营销推广服务，并成为最受企业青睐的互联网营销推广平台。目前，中国已有数十万家企业使用了百度的搜索推广服务，不断提升企业自身的品牌及运营效率。通过持续的商业模式创新，百度正进一步带动整个互联网行业和中小企业的经济增长，推动社会经济的发展和转型。
+为推动中国数百万中小网站的发展，百度借助超大流量的平台优势，联合所有优质的各类网站，建立了世界上最大的网络联盟，使各类企业的搜索推广、品牌营销的价值、覆盖面均大面积提升。与此同时，各网站也在联盟大家庭的互助下，获得最大的生存与发展机会。
+作为国内的一家知名企业，百度也一直秉承“弥合信息鸿沟，共享知识社会”的责任理念，坚持履行企业公民的社会责任。成立来，百度利用自身优势积极投身公益事业，先后投入巨大资源，为盲人、少儿、老年人群体打造专门的搜索产品，解决了特殊群体上网难问题,极大地弥补了社会信息鸿沟问题。此外，在加速推动中国信息化进程、净化网络环境、搜索引擎教育及提升大学生就业率等方面，百度也一直走在行业领先的地位。2011年初，百度还特别成立了百度基金会，围绕知识教育、环境保护、灾难救助等领域，更加系统规范地管理和践行公益事业。
+2005年，百度在美国纳斯达克上市，一举打破首日涨幅最高等多项纪录，并成为首家进入纳斯达克成分股的中国公司。通过数年来的市场表现，百度优异的业绩与值得依赖的回报，使之成为中国企业价值的代表，傲然屹立于全球资本市场。
+2009年，百度推出全新的框计算技术概念，并基于此理念推出百度开放平台，帮助更多优秀的第三方开发者利用互联网平台自主创新、自主创业，在大幅提升网民互联网使用体验的同时，带动起围绕用户需求进行研发的产业创新热潮，对中国互联网产业的升级和发展产生巨大的拉动效应。
+随着中国互联网从PC端向移动端转型，百度也在积极围绕核心战略加大对移动和云领域的投入和布局，不断把PC领域的优势向移动领域扩展。据CNNIC《2012中国网民搜索行为研究报告》数据显示，百度搜索在手机用户中的渗透率达到96.9%，用户首选率已经达到88.5%。
+在通过技术创新不断满足用户的移动搜索需求的同时，百度也在继续积极推动移动云生态系统的建设和发展，与产业实现共赢。2012年9月，百度面向开发者全面开放包括云存储、大数据智能和云计算在内的核心云能力，为开发者量身定制从开发到运营的“七种武器”，为开发者提供更强大的技术运营支持与推广变现保障，以帮助他们在移动云时代获得更好的收益和成长。
+如今，百度已经成为中国最具价值的品牌之一，英国《金融时报》将百度列为“中国十大世界级品牌”，成为这个榜单中最年轻的一家公司，也是唯一一家互联网公司。而“亚洲最受尊敬企业”、“全球最具创新力企业”、“中国互联网力量之星”等一系列荣誉称号的获得，也无一不向外界展示着百度成立数年来的成就。
+多年来，百度董事长兼CEO李彦宏，率领百度人所形成的“简单可依赖”的核心文化，深深地植根于百度。这是一个充满朝气、求实坦诚的公司，以搜索改变生活，推动人类的文明与进步，促进中国经济的发展为己任，正朝着更为远大的目标而迈进。A Fragment represents a behavior or a portion of user interface in an Activity. You can combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. You can think of a fragment as a modular section of an activity, which has its own lifecycle, receives its own input events, and which you can add or remove while the activity is running (sort of like a "sub activity" that you can reuse in different activities).</string>
+
+    <!-- for app -->
+    <string name="test1">测试1</string>
+    <string name="test2">测试2</string>
+    <string name="test3">测试3</string>
+    <string name="show_dialog">对话框</string>
+    <string name="full_screen">全屏模式</string>
+    <string name="menu_visibility">隐藏菜单</string>
+    <string name="trigger_menu">触发菜单</string>
+    <string name="action_more_menu">更多</string>
+    <string name="menu_add">新增</string>
+    <string name="menu_wallpaper">壁纸画</string>
+    <string name="menu_settings">设置</string>
+    
+    <string name="message">消息对话框</string>
+    <string name="list">无Button对话框</string>
+    <string name="progress_dialog">Progress对话框</string>
+    <string name="date_picker_dialog">日期对话框</string>
+    <string name="single_choice">单选对话框</string>
+    <string name="multi_choice">多选对话框</string>
+    <string name="title">标题样式</string>
+    <string name="ckilTest">多选删除</string>
+    <string name="menu_transparent">菜单透明</string>
+    <string name="dyn_menu">动态菜单</string>
+    <string name="custom_view">标题自定义</string>
+    <string name="preference">偏好</string>
+    
+    <!-- for framework -->
+    <string name="searchview_hint">Find something</string>
+    <string name="cheese_hunt_hint">Cheese hunt</string>
+    <string name="searchview_description_search">"Search"</string>
+    <string name="searchview_description_query">"Search query"</string>
+    <string name="searchview_description_clear">"Clear query"</string>
+    <string name="searchview_description_submit">"Submit query"</string>
+    <string name="searchview_description_voice">"Voice search"</string>
+    
+    <string name="date_time_done">完成</string>
+    <string name="date_picker_dialog_title">设置日期</string>
+</resources>

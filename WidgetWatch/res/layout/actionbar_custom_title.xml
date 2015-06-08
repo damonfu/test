@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip">
+    <Button
+        android:id="@android:id/selectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="120dp"
+        android:text="@string/select_item_title"
+        android:textColor="#ffffffff"
+        style="?android:attr/actionDropDownStyle" />
+</LinearLayout>
+

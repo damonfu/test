@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content">
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content" 
+			android:id="@+id/btnl0"
+			android:layout_weight="1"
+			android:text="@string/btnl0">
+		</Button>
+		
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content" 
+			android:id="@+id/btnl1"
+			android:layout_weight="1"
+			android:text="@string/btnl1">
+		</Button>
+		
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnl2"
+			android:layout_weight="1"
+			android:text="@string/btnl2">
+		</Button>
+		
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnl3"
+			android:layout_weight="1"
+			android:text="@string/btnl3">
+		</Button>
+
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content">
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content" 
+			android:id="@+id/btnr0"
+			android:layout_weight="1"
+			android:text="@string/btnr0">
+		</Button>
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:id="@+id/btnr1"
+			android:text="@string/btnr1">
+		</Button>
+		<Button android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" android:id="@+id/btnr2"
+			android:text="@string/btnr2">
+		</Button>
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:id="@+id/btnr3"
+			android:text="@string/btnr3">
+		</Button>
+
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout05"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="horizontal">
+		<EditText android:layout_height="wrap_content" 
+			android:id="@+id/edt_left"
+			android:layout_width="0dip" 
+			android:layout_weight="1"
+			android:hint="@string/btn_set_left">
+		</EditText>
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content" 
+			android:id="@+id/btn_set_left"
+			android:layout_weight="1" 
+			android:text="@string/btn_set_left">
+		</Button>
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/LinearLayout06"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:orientation="horizontal">
+		<EditText android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/edt_center"
+			android:layout_weight="1"
+			android:hint="@string/btn_set_center">
+		</EditText>
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/btn_set_center"
+			android:layout_weight="1"
+			android:text="@string/btn_set_center">
+		</Button>
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/LinearLayout05"
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+		<EditText android:layout_width="0dip"
+			android:layout_height="wrap_content" 
+			android:id="@+id/edt_right"
+			android:layout_weight="1" 
+			android:hint="@string/btn_set_right"></EditText>
+		<Button android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/btn_set_right"
+			android:layout_weight="1"
+			android:text="@string/btn_set_right">
+		</Button>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout06"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="vertical">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnr5"
+			android:text="@string/btnr5">
+		</Button>
+
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnr6"
+			android:text="@string/btnr7">
+		</Button>
+	</LinearLayout>
+</LinearLayout>

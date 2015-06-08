@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item1" android:title="search" android:showAsAction="always" android:actionViewClass="android.widget.SearchView"></item>
+    <item android:id="@+id/item2" android:title="item2" android:showAsAction="always"></item>
+    <item android:id="@+id/item3" android:title="item3" android:showAsAction="ifRoom|collapseActionView"></item>
+    <item android:id="@+id/item4" android:title="item4" android:showAsAction="ifRoom|collapseActionView" android:enabled="false"></item>
+    <item android:id="@+id/item5" android:title="item5" android:showAsAction="ifRoom|collapseActionView"></item>
+    <item android:id="@+id/item6" android:title="item6" android:showAsAction="ifRoom|collapseActionView"></item>
+    <item android:id="@+id/item7" android:title="item7" android:showAsAction="ifRoom|collapseActionView"></item>
+    <item android:id="@+id/item8" android:title="item8" android:showAsAction="ifRoom|collapseActionView"></item>
+    <item android:id="@+id/item9" android:title="item9" android:showAsAction="ifRoom|collapseActionView"></item>
+    <item android:id="@+id/item10" android:title="item10" android:showAsAction="ifRoom|collapseActionView"></item>
+    <item android:id="@+id/item11" android:title="item11" android:showAsAction="ifRoom|collapseActionView"></item>
+    <item android:id="@+id/item12" android:title="item12" android:showAsAction="ifRoom|collapseActionView"></item>
+</menu>

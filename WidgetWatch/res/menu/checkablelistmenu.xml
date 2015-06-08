@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/menu_cancel"
+        android:icon="@drawable/cld_ic_ab_cancel_baidu_light"
+        android:showAsAction="always"
+        android:title="@string/menu_add" />
+
+    <item
+        android:id="@+id/menu_confirm"
+        android:icon="@drawable/cld_ic_ab_done_baidu_light"
+        android:showAsAction="always"
+        android:title="@string/test2" />
+    
+    <item
+        android:id="@+id/dyn_menu"
+        android:title="@string/dyn_menu"/>
+
+    <item
+        android:id="@+id/menu_setting1"
+        android:title="@string/test2"/>
+
+    <item
+        android:id="@+id/menu_setting2"
+        android:title="@string/test3"/>
+
+</menu>

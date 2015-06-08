@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_enabled="false"
+        android:drawable="@drawable/yi_ic_menu_cancel_disable_baidu"/>
+    <item android:state_enabled="true"
+        android:drawable="@drawable/yi_ic_menu_cancel_normal_baidu"/>
+
+</selector>
+

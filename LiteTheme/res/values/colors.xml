@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/colors.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+
+    <color name="baidu_window_background">#0C141B</color>
+    <color name="yi_button_default_normal">#ff474747</color>
+    <color name="yi_button_default_press">#ffffffff</color>
+    <color name="yi_button_default_disable">#ffb5b5b5</color>
+    <color name="yi_button_red_normal">#ffffffff</color>
+    <color name="yi_button_red_press">#ffffffff</color>
+    <color name="yi_button_red_disable">#66ffffff</color>
+    <color name="yi_button_blue_normal">#ffffffff</color>
+    <color name="yi_button_blue_press">#ffffffff</color>
+    <color name="yi_button_blue_disable">#66ffffff</color>
+    <color name="yi_button_green_normal">#ffffffff</color>
+    <color name="yi_button_green_press">#ffffffff</color>
+    <color name="yi_button_green_disable">#66ffffff</color>
+    <color name="yi_button_list_normal">#ff838383</color>
+    <color name="yi_button_list_press">#ffffffff</color>
+    <color name="yi_button_list_disable">#66838383</color>
+    <color name="yi_edittext_normal">#ff474747</color>
+    <color name="yi_edittext_press">#ff474747</color>
+    <color name="yi_edittext_disable">#66474747</color>
+    <color name="yi_edittext_hint_normal">#ffb9b9b9</color>
+    <color name="yi_edittext_hint_press">#ffb9b9b9</color>
+    <color name="yi_edittext_hint_disable">#66b9b9b9</color>
+    <color name="yi_text_grey1">#ff7c7c7c</color>
+    <color name="yi_text_grey2">#ffb9b9b9</color>
+    <color name="yi_text_red1">#ffd84545</color>
+    <color name="yi_dim_foreground_light">#323232</color>
+    <color name="yi_text_blue1">#ff4e87c7</color>
+    <color name="yi_dim_foreground_light_disabled">#80323232</color>
+    <color name="yi_dim_foreground_light_inverse">#bebebe</color>
+    <color name="yi_dim_foreground_light_inverse_disabled">#80bebebe</color>
+
+    <!-- Yi2.1 -->
+    <eat-comment />
+    <!-- ####################new ui######################## -->
+    <color name="content_mask">#80000000</color>
+    <!-- framework color -->
+    <color name="cld_bright_foreground_baidu_light">#ff54575f</color>
+    <color name="cld_bright_foreground_disabled_baidu_light">#6654575f</color>
+    <color name="cld_dim_foreground_baidu_light">#ffacb0b6</color>
+    <color name="cld_dim_foreground_disabled_baidu_light">#ffdee0e2</color>
+    <!-- for action tab text -->
+    <color name="cld_action_tab_text_selected_baidu_light">#ffffffff</color>
+    <color name="cld_action_tab_text_unselected_baidu_light">#80ffffff</color>
+    <color name="cld_baidu_blue_light">#ff4a7cc1</color>
+    <!-- color for action menu item -->
+    <color name="cld_action_menu_item_text_baidu_light">#8792a0</color>
+    <color name="cld_action_menu_item_text_shadow_baidu_light">#f7f8f9</color>
+
+    <!-- FrameWork res -->
+    <drawable name="stat_sys_upload_done">@drawable/stat_sys_upload_done_static</drawable>
+    <drawable name="yi_dialog_baidu_dark_frame">@drawable/yi_dialog_full_baidu_dark</drawable>
+    <drawable name="yi_dialog_baidu_light_frame">@drawable/yi_dialog_full_baidu_light</drawable>
+    <drawable name="yi_input_method_fullscreen_background_baidu">@drawable/yi_screen_background_baidu_dark</drawable>
+    <drawable name="yi_screen_background_baidu_light">#fff3f3f3</drawable>
+    <drawable name="yi_screen_background_baidu_dark">#ff000000</drawable>
+
+    <color name="yi_background_baidu_dark">#ff000000</color>
+    <color name="yi_background_baidu_light">#f5f7fa</color>
+    <color name="yi_bright_foreground_baidu_dark">#ffffffff</color>
+    <color name="yi_bright_foreground_baidu_light">#ff54575f</color>
+    <color name="yi_bright_foreground_disabled_baidu_dark">#ff848688</color>
+    <color name="yi_bright_foreground_disabled_baidu_light">#6654575f</color>
+    <color name="yi_bright_foreground_inverse_baidu_dark">@color/yi_bright_foreground_baidu_light</color>
+    <color name="yi_bright_foreground_inverse_baidu_light">@color/yi_bright_foreground_baidu_dark</color>
+    <color name="yi_dim_foreground_baidu_dark">#b0b0b0</color>
+    <color name="yi_dim_foreground_disabled_baidu_dark">#464646</color>
+    <color name="yi_dim_foreground_inverse_baidu_dark">#8c8c8c</color>
+    <color name="yi_dim_foreground_inverse_disabled_baidu_dark">#808c8c8c</color>
+    <color name="yi_hint_foreground_baidu_dark">#808080</color>
+    <color name="yi_dim_foreground_baidu_light">#ffacb0b6</color>
+    <color name="yi_dim_foreground_disabled_baidu_light">#ffdee0e2</color>
+    <color name="yi_dim_foreground_inverse_baidu_light">#b0b0b0</color>
+    <color name="yi_dim_foreground_inverse_disabled_baidu_light">#464646</color>
+    <color name="yi_hint_foreground_baidu_light">#acb1b6</color>
+    <color name="yi_highlighted_text_baidu_dark">#662b7cef</color>
+    <color name="yi_highlighted_text_baidu_light">#6633b5e5</color>
+    <color name="yi_link_text_baidu_dark">#5c5cff</color>
+    <color name="yi_link_text_baidu_light">#0000ee</color>
+    <color name="yi_blue_header_text_baidu_light">#4a7cc1</color>
+    <color name="yi_group_button_dialog_pressed_baidu_dark">#46c5c1ff</color>
+    <color name="yi_group_button_dialog_focused_baidu_dark">#2699cc00</color>
+    <color name="yi_group_button_dialog_pressed_baidu_light">#ffffffff</color>
+    <color name="yi_group_button_dialog_focused_baidu_light">#4699cc00</color>
+    <!-- A light device default shade of blue -->
+    <color name="yi_baidu_blue_light">#ff4a7cc1</color>
+    <!-- A light device default shade of green -->
+    <color name="yi_baidu_green_light">#ff99cc00</color>
+    <!-- A light device default shade of red -->
+    <color name="yi_baidu_red_light">#ffff4444</color>
+    <!-- A dark device default shade of blue -->
+    <color name="yi_baidu_blue_dark">#ff0099cc</color>
+    <!-- A dark device default shade of green -->
+    <color name="yi_baidu_green_dark">#ff669900</color>
+    <!-- A dark device default shade of red -->
+    <color name="yi_baidu_red_dark">#ffcc0000</color>
+    <!-- A device default shade of purple -->
+    <color name="yi_baidu_purple">#ffaa66cc</color>
+    <!-- A light device default shade of orange -->
+    <color name="yi_baidu_orange_light">#ffffbb33</color>
+    <!-- A dark device default shade of orange -->
+    <color name="yi_baidu_orange_dark">#ffff8800</color>
+    <!-- A really bright device default shade of blue -->
+    <color name="yi_baidu_blue_bright">#ff00ddff</color>
+    <color name="yi_dark_action_bar_title">#ffffffff</color>
+    <color name="yi_list_section_divider_text_light">#ff98a2b3</color>
+    <color name="yi_action_tab_text_selected_baidu_light">#ffffffff</color>
+    <color name="yi_status_bar_event_content">#80878d</color>
+    <color name="yi_status_bar_event_content_title">#4f555a</color>
+    <color name="yi_action_bar_title_shadow">#00000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

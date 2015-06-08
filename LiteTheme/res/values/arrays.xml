@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="preloaded_drawables"></array>
+
+    <string-array name="shutdown_reboot_actions">
+        <item>reboot</item>
+        <item>recovery</item>
+    </string-array>
+    <string-array name="shutdown_reboot_options">
+        <item>@string/reboot_reboot</item>
+        <item>@string/reboot_recovery</item>
+    </string-array>
+
+</resources>

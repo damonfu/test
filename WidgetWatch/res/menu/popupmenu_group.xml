@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/group1" android:menuCategory="container">
+        <item android:id="@+id/group1_1" android:title="group1_1"></item>
+        <item android:id="@+id/group1_2" android:title="group1_2" android:enabled="false"></item>
+        <item android:id="@+id/group1_3" android:title="group1_1"></item>
+    </group>
+    <group android:id="@+id/group2" android:enabled="false" android:menuCategory="container">
+        <item android:id="@+id/group2_1" android:title="group2_1" android:enabled="false"></item>
+        <item android:id="@+id/group2_2" android:title="group2_2"></item>
+        <item android:id="@+id/group2_3" android:title="group2_3"></item>
+    </group>
+    <group android:id="@+id/group3" android:menuCategory="container">
+        <item android:id="@+id/group3_1" android:title="group3_1"></item>
+        <item android:id="@+id/group3_2" android:title="group3_2"></item>
+    </group>
+    
+
+</menu>

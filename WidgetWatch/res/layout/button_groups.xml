@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yi="http://schemas.android.com/apk/res/yi"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:paddingTop="5dip" >
+    
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|center" >
+        <yi.widget.ButtonGroup android:id="@+id/button_group_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:background="@drawable/button_group_background" >
+        </yi.widget.ButtonGroup>
+	</LinearLayout>
+
+    <LinearLayout android:id="@+id/parent"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center" >
+        <yi.widget.ButtonGroup android:id="@+id/button_group_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </yi.widget.ButtonGroup>
+	</LinearLayout>
+ 
+    <LinearLayout
+		style="?attr/functionBarStyle"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="9dip"
+        android:layout_gravity="bottom" > 
+		<yi.widget.ButtonGroup android:id="@+id/button_group_0"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+		</yi.widget.ButtonGroup>
+
+	</LinearLayout>
+
+</FrameLayout>
+

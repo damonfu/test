@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/image2"  
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:maxWidth="40dip"
+	android:layout_centerVertical="true"
+	android:layout_alignParentRight="true"
+	android:layout_marginRight="8dip"/>

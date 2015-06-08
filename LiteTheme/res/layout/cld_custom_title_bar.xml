@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/cld_search_view_background">
+
+    <ImageView
+       android:id="@+id/custom_back_icon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="0dp"
+       android:layout_gravity="center_vertical"
+       android:src="@drawable/cld_ab_back_baidu_dark"
+        />
+ <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_centerVertical="true"
+       android:layout_weight="1"
+       android:gravity="center"
+     >
+      <TextView
+       android:id="@+id/custom_title_text"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:paddingLeft="4dip"
+       android:ellipsize="middle"
+       android:focusable="true"
+       android:gravity="center"
+       android:singleLine="true"
+       android:focusableInTouchMode="true"
+       android:scrollHorizontally="false"
+       android:marqueeRepeatLimit="1"
+       android:textColor="#FFFFFF"
+       android:textSize="18dp"/>
+       <ImageView
+       android:id="@+id/custom_title_spiner_open"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginRight="0dp"
+       android:src="@drawable/cld_ic_filter_down"
+       android:visibility="gone"
+        />
+       <ImageView
+       android:id="@+id/custom_title_spiner_close"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginRight="0dp"
+       android:src="@drawable/cld_ic_filter_up"
+       android:visibility="gone"
+        />
+     
+ </LinearLayout>
+       <ImageButton
+        android:id="@+id/custom_aciton_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="true" />
+
+</LinearLayout>
+
+
+

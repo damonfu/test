@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="5dp">
+      <bitmap android:src="@drawable/yi_ic_titlebar_btn_right_normal"
+        android:gravity="right" />
+    </item>
+</layer-list>

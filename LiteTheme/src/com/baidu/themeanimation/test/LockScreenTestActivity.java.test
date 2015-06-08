@@ -1,0 +1,220 @@
+
+package com.baidu.themeanimation.test;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.xmlpull.v1.XmlPullParserException;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.text.format.Time;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.baidu.themeanimation.R;
+import com.baidu.themeanimation.element.LockScreenElement;
+import com.baidu.themeanimation.util.LockScreenHandler;
+import com.baidu.themeanimation.util.LockScreenParser;
+import com.baidu.themeanimation.util.Logger;
+import com.baidu.themeanimation.util.FileUtil;
+import com.baidu.themeanimation.model.InfoRefreshUtil;
+
+public class LockScreenTestActivity extends Activity {
+    private static final String TAG = "AnimationViewFactory";
+    private View mLockScreenView;
+    public LockScreenElement mLockScreenElement;
+
+    private int mCategory = -1;
+    private Boolean mIsInitSuccess = false;
+    public LockScreenHandler mHandler;
+
+    private HandlerCallBack mHandlerCallback = new HandlerCallBack();
+    private InfoRefreshUtil mInfoRefreshUtil;
+
+    private Context mContext;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        mContext = this;
+        mHandler = new LockScreenHandler(mContext, mHandlerCallback);
+
+//        mInfoRefreshUtil = new InfoRefreshUtil(this, mHandler,"/mnt/sdcard/", "lockscreen", "wallpaper");
+        mInfoRefreshUtil = new InfoRefreshUtil(mContext, mHandler,
+                "/data/data/com.baidu.thememanager.ui/files/", "lockscreen", "wallpaper");
+        initlayout();
+        ViewGroup view_layout = (ViewGroup) findViewById(R.id.ani);
+
+        if (!mIsInitSuccess) {
+            // restore default lockscreen
+            Logger.i(TAG, "initlayout failed!");
+
+        } else {
+            if (mLockScreenView != null) {
+                view_layout.addView(mLockScreenView);
+                Logger.i(TAG, "create multi-lockscreen ok");
+                mInfoRefreshUtil.setGlobalVariable();
+                mInfoRefreshUtil.register_Receiver_create();
+                dealPause();
+            }
+        }
+    }
+
+    public void initlayout() {
+        Logger.i(TAG, "initlayout ");
+        mIsInitSuccess = false;
+        if (mLockScreenElement == null) {
+            Logger.i(TAG, "create LockScreenElement");
+            InputStream manifestStream = null;
+            manifestStream = FileUtil.getInstance().openFile(mHandler);
+            if (manifestStream != null) {
+                try {
+                    mLockScreenElement = LockScreenParser.getInstance().inflate(manifestStream);
+                } catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    try {
+                        manifestStream.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+        if (mLockScreenElement != null) {
+            Logger.i(TAG, "generate LockScreenView");
+            try {
+                mLockScreenView = mLockScreenElement.generateView(mContext,
+                        FileUtil.getInstance().SCREEN_WIDTH,
+                        FileUtil.getInstance().SCREEN_HEIGHT, mHandler);
+            } catch (IllegalStateException e) {
+                mLockScreenView = null;
+                e.printStackTrace();
+            } catch (Exception e1) {
+                mLockScreenView = null;
+                e1.printStackTrace();
+            }
+        }
+        if (mLockScreenView != null) {
+            mIsInitSuccess = true;
+        } else {
+            mIsInitSuccess = false;
+        }
+    }
+
+    public void dealPause() {
+        Logger.i(TAG, "onPause");
+        if (mLockScreenElement != null) {
+            mLockScreenElement.stopAnimations();
+            mInfoRefreshUtil.unregister_Receiver_pause();
+        }
+    }
+
+    public void dealResume() {
+        Logger.i(TAG, "onResume");
+        if (mLockScreenElement != null) {
+            mInfoRefreshUtil.register_Receiver_resume();
+            mLockScreenElement.updateContent(mContext, mHandler);
+            mLockScreenElement.startAnimations();
+        }
+        mCategory = -1;
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        // TODO Auto-generated method stub
+        if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+            mInfoRefreshUtil.dispatchTouch(ev.getX(), ev.getY());
+        }
+        return super.dispatchTouchEvent(ev);
+    }
+
+    private class HandlerCallBack implements LockScreenHandler.HandlerCallback {
+
+        public void unLock() {
+            if (mLockScreenElement != null) {
+                mLockScreenElement.startAnimations();
+            }
+        }
+
+        public void updateWallpaper() {
+            if (mLockScreenElement != null) {
+                mLockScreenElement.updateWallpaper();
+            }
+        }
+
+        public void setCategory(int category) {
+            if (mLockScreenElement != null && category != mCategory) {
+                mCategory = category;
+                Logger.d("category", "Change category to " + mCategory);
+                mLockScreenElement.dispatchCategoryChange(category);
+            }
+        }
+
+        public void dispatchTimeTick(Time time) {
+            if (mLockScreenElement != null) {
+                mLockScreenElement.dispatchTimeTick(time);
+            }
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        // TODO Auto-generated method stub
+        super.onPause();
+        dealPause();
+    }
+
+    @Override
+    protected void onResume() {
+        // TODO Auto-generated method stub
+        super.onResume();
+        dealResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        // TODO Auto-generated method stub
+        super.onDestroy();
+        Logger.i(TAG, "onDestroy");
+
+        mInfoRefreshUtil.unregister_Receiver_destory();
+        if (mLockScreenElement != null) {
+            mLockScreenElement.releaseView();
+        }
+
+        mLockScreenView = null;
+        mLockScreenElement = null;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // TODO Auto-generated method stub
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.activity_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+        // TODO Auto-generated method stub
+        if (item.getItemId() == R.id.menu_settings) {
+            dealPause();
+        }
+        return super.onMenuItemSelected(featureId, item);
+    }
+
+}

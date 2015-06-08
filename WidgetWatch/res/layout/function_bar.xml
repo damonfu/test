@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:background="@android:color/black"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<LinearLayout
+		android:id="@+id/functionbar"
+		style="?attr/functionBarStyle"
+		>
+	  <Button android:id="@+id/item1"
+		android:text="@string/function_item"
+		style="?attr/functionBarItemRedStyle"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/functionbar1"
+		android:layout_below="@id/functionbar"
+		style="?attr/functionBarStyle"
+		>
+	  <Button android:id="@+id/item2"
+		android:text="@string/function_item"
+		style="?attr/functionBarItemStyle"/>
+	  <Button android:id="@+id/item3"
+		android:text="@string/function_item"
+		style="?attr/functionBarItemRedStyle"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/functionbar2"
+		android:layout_below="@id/functionbar1"
+		style="?attr/functionBarStyle"
+		>
+	  <Button android:id="@+id/item4"
+		android:text="@string/function_item"
+		style="?attr/functionBarItemStyle"/>
+	  <Button android:id="@+id/item5"
+		android:text="@string/function_item"
+		style="?attr/functionBarItemRedStyle"/>
+	  <Button android:id="@+id/item6"
+		android:text="@string/function_item"
+		style="?attr/functionBarItemGreenStyle"/>
+	</LinearLayout>
+
+    <Button android:id="@+id/anim"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/functionbar2" />
+    <Button android:id="@+id/anim1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/functionbar2"
+        android:layout_toRightOf="@id/anim"
+        />
+
+</RelativeLayout>
+
+
+	<LinearLayout
+		android:id="@+id/functionbar3"
+		android:layout_gravity="bottom"
+		android:visibility="gone"
+		style="?attr/functionBarStyle"
+		>
+	  <Button android:id="@+id/item7"
+		android:text="@string/function_item"
+		style="?attr/functionBarItemStyle"/>
+	  <Button android:id="@+id/item8"
+		android:text="@string/function_item"
+		style="?attr/functionBarItemRedStyle"/>
+	</LinearLayout>
+	
+</FrameLayout>

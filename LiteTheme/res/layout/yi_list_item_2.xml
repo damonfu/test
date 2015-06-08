@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yi.widget.CheckableItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="?android:attr/listPreferredItemHeight"	
+	android:layout_width="match_parent"
+	>
+	
+	 <include layout="@layout/yi_list_item_left_image"/>
+	
+	 <TextView android:id="@+id/text1" 
+	 	android:ellipsize="end"
+   		android:layout_width="wrap_content" 
+   		android:layout_height="wrap_content"
+	   	android:layout_toRightOf="@+id/image1"
+	   	android:layout_toLeftOf="@+id/image2"	    		   		   	
+	   	android:singleLine="true"
+   		android:layout_alignWithParentIfMissing="true"
+   		android:layout_alignParentTop="true" 
+   		android:layout_marginLeft="13dip"
+   		android:layout_marginRight="13dip"   		
+   		android:layout_marginTop="9dip"
+		style="@style/Yi.ListItem.TextAppearance.Large"
+		/>
+   		
+   	 <TextView android:id="@+id/text2" 
+	 	android:ellipsize="end"
+   		android:layout_width="wrap_content" 
+   		android:layout_height="wrap_content"	   		    		   		    
+   		android:layout_toRightOf="@+id/image1"
+	   	android:layout_toLeftOf="@+id/image2"	    		   		   	
+	   	android:singleLine="true"  		
+   		android:layout_alignWithParentIfMissing="true" 
+   		android:layout_alignParentBottom="true" 
+   		android:layout_marginLeft="13dip"
+   		android:layout_marginRight="13dip"   		
+   		android:layout_marginBottom="9dip" 
+		style="@style/Yi.ListItem.TextAppearance.Medium"
+		/>	
+    	
+	 <include layout="@layout/yi_list_item_right_image"/> 
+	    	 
+</yi.widget.CheckableItemLayout>

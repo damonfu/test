@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/multi_mode_action_bar"
+	>
+
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	>
+		<Button android:id="@+id/btn_select_all" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/select_all"
+		/>
+		<Button android:id="@+id/btn_unselect_all" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="@string/unselect_all"
+		/>
+	</LinearLayout>
+
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	>
+		<Button android:id="@+id/btn_mode_none" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/mode_none"
+		/>
+		<Button android:id="@+id/btn_mode_single" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/mode_single"
+		/>
+		<Button android:id="@+id/btn_mode_multiple" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/mode_multiple"
+		/>
+	</LinearLayout>  
+
+	<ListView        
+		android:id="@+id/list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fastScrollEnabled="true"
+	/>
+
+</LinearLayout>
+
+
+    <include android:id="@+id/multi_mode_action_bar"
+        android:visibility="gone"
+        layout="@layout/yi_multi_mode_custom_actionbar" />
+</RelativeLayout>

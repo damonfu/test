@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_height="match_parent" 
+	android:layout_width="match_parent">
+
+	<LinearLayout 
+		android:id="@+id/LinearLayout01" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:orientation="vertical">
+		
+		<LinearLayout 
+			android:id="@+id/LinearLayout02" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			<Button 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/btn_enable" 
+				android:text="@string/enable_all">
+			</Button>
+
+			
+			<Button 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/btn_disable" 
+				android:text="@string/disable_all">
+			</Button>
+		</LinearLayout>
+		
+		<Button 
+			android:id="@+id/Button01" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/buttonStyle">
+		</Button>
+	
+		<Button 
+			android:id="@+id/Button02" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			style="?android:attr/buttonStyleSmall" 
+			android:text="@string/buttonStyle">
+		</Button>
+	
+		<ToggleButton 
+			android:text="@+id/ToggleButton01" 
+			android:id="@+id/ToggleButton01" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		</ToggleButton>
+
+		<CheckBox 
+			android:id="@+id/CheckBox01" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/check_box">
+		</CheckBox>
+	
+		<CheckBox 
+			android:id="@+id/CheckBox02" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			style="?android:attr/starStyle" 
+			android:text="@string/star">
+		</CheckBox>
+	
+		<CheckedTextView 
+			android:id="@+id/CheckedTextView01" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:clickable="true" 
+			android:text="@string/check_text_view">
+		</CheckedTextView>
+	    
+            <RadioButton 
+				android:id="@+id/RadioButton03" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+                android:drawablePadding="50dip"
+				android:text="@string/button_radio_2">
+			</RadioButton>
+
+		<RadioGroup 
+			android:id="@+id/RadioGroup01" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		
+			<RadioButton 
+				android:id="@+id/RadioButton01" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/button_radio_1"
+                >
+			</RadioButton>
+		
+			<RadioButton 
+				android:id="@+id/RadioButton02" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+                android:drawablePadding="4dip"
+				android:text="@string/button_radio_2"
+                >
+			</RadioButton>
+		</RadioGroup>
+		
+		<ImageButton 
+			android:id="@+id/ImageButton01" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:src="@drawable/icon">
+		</ImageButton>
+	
+		<ImageView
+			android:layout_width="25dip" 
+			android:layout_height="25dip" 
+			android:src="@drawable/sygtc">
+		</ImageView>
+		
+		<ImageView
+			android:layout_width="25dip" 
+			android:layout_height="25dip" 
+			android:src="@drawable/stat_sys_data_connected_h">
+		</ImageView>
+		
+		<ImageView
+			android:layout_width="25dip" 
+			android:layout_height="25dip" 
+			android:src="@drawable/stat_sys_data_connected_n">
+		</ImageView>
+
+	</LinearLayout>
+
+</ScrollView>

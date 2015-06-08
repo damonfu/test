@@ -1,0 +1,151 @@
+<ScrollView android:id="@+id/ScrollView01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<LinearLayout android:id="@+id/LinearLayout01" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+	    <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+        />
+	
+        <include layout="@layout/yi_search_bar"/>
+        <include layout="@layout/yi_search_bar"/>
+
+		<LinearLayout android:id="@+id/LinearLayout02" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+
+			<Button android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/btn_enable" 
+				android:text="@string/enable_all">
+			</Button>
+
+			<Button android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/btn_disable" 
+				android:text="@string/disable_all">
+			</Button>
+		</LinearLayout>
+
+
+		<LinearLayout android:id="@+id/buttons" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+			
+			<Button android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/buttonStyleRed" 
+				style="?attr/buttonStyleRed">
+			</Button>
+
+			<Button android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/listButtonStyleRed"
+				style="?attr/listButtonStyleRed">
+			</Button>
+		    
+		    <Button android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/buttonStyleGreen" 
+				style="?attr/buttonStyleGreen">
+	   		</Button>
+		    
+		    <Button android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"  
+		        android:text="@string/listButtonStyleGreen"
+		        style="?attr/listButtonStyleGreen">
+		    </Button>
+
+			<Button android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/buttonStyle"
+				style="@style/Yi.Widget.Button">
+			</Button>
+		
+			<Button android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/listButtonStyle"
+				style="?attr/listButtonStyle">
+			</Button>
+
+		    <Button android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/buttonStyleBlue"
+				style="?attr/buttonStyleBlue">
+			</Button>
+			
+		</LinearLayout>
+        
+    	<LinearLayout android:id="@+id/LinearLayout07" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" android:orientation="vertical">
+        	<LinearLayout android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" android:orientation="horizontal">                        
+                <EditText android:layout_width="150dip" 
+                        android:layout_height="wrap_content" android:id="@+id/edit0"/>   
+                <Button android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:id="@+id/btn_green_add" style="?attr/buttonStyleAdd">
+                </Button>
+         	</LinearLayout>  
+          
+		    <LinearLayout android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:orientation="horizontal">              
+		        <EditText android:layout_width="150dip" 
+		        	android:layout_height="wrap_content" android:id="@+id/edit1"/>   
+		        <Button android:layout_width="wrap_content" 
+		        	android:layout_height="wrap_content" 
+		            android:id="@+id/btn_red_del" style="?attr/buttonStyleDel">
+		        </Button>
+		    </LinearLayout>
+    	</LinearLayout>
+        	
+		<LinearLayout android:id="@+id/LinearLayout05" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+			<!--yi.widget.Switcher android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/btn_switcher" 
+				android:thumbOffset="0dip">
+			</yi.widget.Switcher>
+
+			<TextView android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/txt_switcher">
+			</TextView>
+
+			<yi.widget.Switcher android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+                android:progressDrawable="@drawable/yi_switcher_progress"     
+                android:thumb="@drawable/ic_clock_alarmclock_switch_btn"
+                android:minHeight="35dip"
+                android:maxHeight="35dip"
+                android:minWidth="79dip"
+                android:maxWidth="79dip"
+				android:thumbOffset="0dip">
+			</yi.widget.Switcher>
+
+			<yi.widget.Switcher android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+                android:progressDrawable="@drawable/yi_switcher_progress"     
+                android:thumb="@drawable/ic_clock_alarmclock_switch_btn"
+				android:thumbOffset="0dip"
+                android:minHeight="35dip"
+                android:maxHeight="35dip"
+                android:minWidth="78dip"
+                android:maxWidth="78dip">
+			</yi.widget.Switcher-->
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>

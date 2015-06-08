@@ -1,0 +1,207 @@
+<ScrollView android:id="@+id/ScrollView01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<LinearLayout android:id="@+id/LinearLayout02" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		
+		<LinearLayout android:id="@+id/LinearLayout04" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+
+		<Button android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/btn_enable" 
+			android:text="@string/enable_all">
+		</Button>
+
+		<Button android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/btn_disable" 
+			android:text="@string/disable_all">
+		</Button>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout01" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+        android:padding="5dip"
+        android:orientation="horizontal">
+				
+		<ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_down" 
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleArrowDown">
+		</ImageView>
+
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_right" 
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleArrowRight">
+		</ImageView>
+
+		<!--ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_plus"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?yi:attr/indicatorStylePlus">
+		</ImageView-->
+
+		<ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_info" 
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleInfo">
+		</ImageView>
+
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+            android:id="@+id/btn_add"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/buttonStyleAdd">
+		</ImageView>
+
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/btn_del"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/buttonStyleDel">
+		</ImageView>
+
+		</LinearLayout>
+
+	<LinearLayout android:id="@id/LinearLayout02" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:orientation="horizontal">
+   
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_play"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStylePlay">
+		</ImageView>
+
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_pause"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStylePause">
+		</ImageView>
+
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@id/ind_pause"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleLayer">
+		</ImageView>
+
+		<ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_cancel" 
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleCancel">
+		</ImageView>
+
+		<ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_black_cancel" 
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleBlackCancel">
+		</ImageView>
+
+		<!--ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_noti" 
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?yi:attr/indicatorStyleNoti">
+		</ImageView-->
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout03" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:orientation="horizontal">
+
+
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_new"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleNew">
+		</ImageView>
+
+        <!--ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_draft"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?yi:attr/indicatorStyleDraft">
+		</ImageView-->
+
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_info_small"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleInfoSmall">
+		</ImageView>
+
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ind_noti_small"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleNotiSmall">
+		</ImageView>
+
+        <ImageView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@id/ind_noti_small"
+            android:layout_margin="5dip"
+            android:focusable="true"
+            android:clickable="true"
+            style="?attr/indicatorStyleArrowSmall">
+		</ImageView>
+
+	</LinearLayout>
+
+ </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,63 @@
+
+package com.baidu.themeanimation.test;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.baidu.themeanimation.R;
+import com.baidu.themeanimation.util.Logger;
+import com.baidu.themeanimation.view.AnimationViewFactory;
+
+public class AnimationTestActivity extends Activity {
+    private static final String TAG = "AnimationViewFactory";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ViewGroup view_layout = (ViewGroup) findViewById(R.id.ani);
+        AnimationViewFactory viewFactory = new AnimationViewFactory(this);
+        AnimationViewFactory.AnimationListener listener = new AnimationViewFactory.AnimationListener() {
+
+            @Override
+            public void onAnimationStart() {
+                // TODO Auto-generated method stub
+                Logger.i(TAG, "onAnimationStart");
+            }
+
+            @Override
+            public void onAnimationRepeat() {
+                // TODO Auto-generated method stub
+                Logger.i(TAG, "onAnimationRepeat");
+            }
+
+            @Override
+            public void onAnimationEnd() {
+                // TODO Auto-generated method stub
+                Logger.i(TAG, "onAnimationEnd");
+            }
+        };
+        viewFactory.initPara("/mnt/sdcard/anim", listener);
+
+        View ani_view = viewFactory.generateView();
+        if (ani_view != null) {
+            view_layout.addView(ani_view);
+        }
+        // Logger.i(TAG, "status1 : " + viewFactory.getAnimationStatus());
+        // viewFactory.stopAnimation();
+        // Logger.i(TAG, "status1 : " + viewFactory.getAnimationStatus());
+        // viewFactory.startAnimation();
+        // Logger.i(TAG, "status2: " + viewFactory.getAnimationStatus());
+        // Logger.i(TAG, "status3: " + viewFactory.getAnimationStatus());
+        // if(viewFactory.getAnimationStatus() ==
+        // Constants.Animation_Status_Running){
+        // viewFactory.stopAnimation();
+        // }
+        // viewFactory.startAnimation();
+        // Logger.i(TAG, "status4: " + viewFactory.getAnimationStatus());
+        // Logger.i(TAG, "status5: " + viewFactory.getAnimationStatus());
+    }
+}

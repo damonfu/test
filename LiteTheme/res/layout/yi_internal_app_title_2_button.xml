@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_root"
+   	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<yi.widget.ButtonGroup android:id="@+id/title_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true" 
+        buttonNumber="2" >
+    </yi.widget.ButtonGroup>
+
+    <include layout="@layout/yi_app_title_button"/>
+    <include layout="@layout/yi_app_title_button1"/>
+
+</RelativeLayout>

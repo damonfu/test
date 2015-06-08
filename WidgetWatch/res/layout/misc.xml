@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_height="match_parent" 
+	android:layout_width="match_parent">
+	
+	<LinearLayout 
+		android:id="@+id/LinearLayout01" 
+		android:layout_height="wrap_content" 
+		android:orientation="vertical"
+		android:layout_width="match_parent">
+			<LinearLayout android:id="@+id/LinearLayout02" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		
+			<Button 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/btn_enable" 
+				android:text="@string/enable_all">
+			</Button>
+			<Button 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/btn_disable" 
+				android:text="@string/disable_all">
+			</Button>
+
+
+	</LinearLayout>
+
+	<SeekBar 
+		android:id="@+id/SeekBar01" 
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent" 
+		android:max="100" android:progress="39" 
+		android:secondaryProgress="75">
+	</SeekBar>
+	
+	<Spinner android:id="@+id/Spinner01" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" 
+		android:drawSelectorOnTop="false" 
+		android:prompt="@string/spinner_1_color_prompt">
+	</Spinner>
+
+	<RatingBar 
+		android:id="@+id/RatingBar01" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		style="?android:attr/ratingBarStyle"
+		android:numStars="5" 
+		android:rating="2.5" 		
+		>
+	</RatingBar>
+	
+	<RatingBar 
+		android:id="@+id/RatingBar02" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:numStars="5" 
+		android:rating="2.5"
+		style="?android:attr/ratingBarStyleIndicator" >
+	</RatingBar>
+	
+	<RatingBar 
+		android:id="@+id/RatingBar03" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		style="?android:attr/ratingBarStyleSmall" 
+		android:numStars="5"
+		android:rating="2.5" 
+		>
+	</RatingBar>
+	
+</LinearLayout>
+
+
+</ScrollView>

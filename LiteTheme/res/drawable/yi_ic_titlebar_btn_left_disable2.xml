@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+      <bitmap android:src="@drawable/yi_ic_titlebar_btn_left_disable"
+			android:layout_height="41dip" 
+			android:layout_width="150dip"
+        android:gravity="left" />
+    </item>
+    <item android:left="5dp">
+      <bitmap android:src="@drawable/yi_ic_titlebar_btn_left_disable"
+			android:layout_height="41dip" 
+			android:layout_width="150dip"
+        android:gravity="left" />
+    </item>
+</layer-list>

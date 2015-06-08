@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!--style name="appTheme" parent="@yi:Yi.Theme.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTitleSize">52dip</item>
+        <item name="android:windowTitleBackgroundStyle">@*yi:style/WindowTitleBackground</item>
+    </style>
+    <style name="actionBarTheme" parent="@style/appTheme">
+        <item name="android:windowActionBar">true</item>
+    </style>    
+ 
+    <style name="myTheme" parent="@style/appTheme">
+        <item name="android:windowAnimationStyle">@style/myAnimation</item>
+        <item name="android:windowIsFloating">true</item>
+    </style-->
+
+    <style name="myAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+        <item name="android:wallpaperOpenEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:wallpaperOpenExitAnimation">@null</item>
+        <item name="android:wallpaperCloseEnterAnimation">@null</item>
+        <item name="android:wallpaperCloseExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- style name="customTitleTheme" parent="@yi:Yi.Theme.AppTitle">
+        <item name="android:windowActionBar">false</item>
+        <item name="*android:windowTitleBackground">@drawable/ic_reader_titlebar_01</item>
+        <item name="*android:contentAreaTopImage">@drawable/ic_reader_titlebar_02</item>
+        <item name="*android:windowTitleButton">@drawable/title_btn</item>
+    </style>
+
+    <style name="customTitleThemeLight" parent="@yi:Yi.Theme.Light.AppTitle">
+        <item name="android:windowActionBar">false</item>
+        <item name="*android:windowTitleBackground">@drawable/ic_reader_titlebar_01</item>
+        <item name="*android:contentAreaTopImage">@drawable/ic_reader_titlebar_02</item>
+        <item name="*android:windowTitleButton">@drawable/title_btn</item>
+    </style-->
+
+    <style name="textAppearanceBase">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="textAppearanceBase.Small">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:text">@string/text_app_small</item>
+    </style>
+
+    <style name="textAppearanceBase.Small.Blue">
+        <item name="android:textColor">@color/yi_text_blue1</item>
+    </style>
+    
+    <style name="textAppearanceBase.Small.Red">
+        <item name="android:textColor">@color/yi_text_red1</item>
+    </style>
+
+    <style name="textAppearanceBase.Small.Grey1">
+        <item name="android:textColor">@color/yi_text_grey1</item>
+    </style>
+
+    <style name="textAppearanceBase.Small.Grey2">
+        <item name="android:textColor">@color/yi_text_grey2</item>
+    </style>
+        
+	<style name="textAppearanceBase.Normal">
+        <item name="android:textAppearance">?attr/textAppearanceNormal</item>
+        <item name="android:text">@string/text_app_normal</item>
+    </style>
+
+    <style name="textAppearanceBase.Normal.Blue">
+        <item name="android:textColor">@color/yi_text_blue1</item>
+    </style>
+    
+    <style name="textAppearanceBase.Normal.Red">
+        <item name="android:textColor">@color/yi_text_red1</item>
+    </style>
+
+    <style name="textAppearanceBase.Normal.Grey1">
+        <item name="android:textColor">@color/yi_text_grey1</item>
+    </style>
+
+    <style name="textAppearanceBase.Normal.Grey2">
+        <item name="android:textColor">@color/yi_text_grey2</item>
+    </style>
+    
+	<style name="textAppearanceBase.Medium">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:text">@string/text_app_medium</item>
+    </style>
+
+    <style name="textAppearanceBase.Medium.Blue">
+        <item name="android:textColor">@color/yi_text_blue1</item>
+    </style>
+    
+    <style name="textAppearanceBase.Medium.Red">
+        <item name="android:textColor">@color/yi_text_red1</item>
+    </style>
+
+    <style name="textAppearanceBase.Medium.Grey1">
+        <item name="android:textColor">@color/yi_text_grey1</item>
+    </style>
+
+    <style name="textAppearanceBase.Medium.Grey2">
+        <item name="android:textColor">@color/yi_text_grey2</item>
+    </style>
+    
+	<style name="textAppearanceBase.Big">
+        <item name="android:textAppearance">?attr/textAppearanceBig</item>
+        <item name="android:text">@string/text_app_big</item>
+    </style>
+
+    <style name="textAppearanceBase.Big.Blue">
+        <item name="android:textColor">@color/yi_text_blue1</item>
+    </style>
+    
+    <style name="textAppearanceBase.Big.Red">
+        <item name="android:textColor">@color/yi_text_red1</item>
+    </style>
+
+    <style name="textAppearanceBase.Big.Grey1">
+        <item name="android:textColor">@color/yi_text_grey1</item>
+    </style>
+
+    <style name="textAppearanceBase.Big.Grey2">
+        <item name="android:textColor">@color/yi_text_grey2</item>
+    </style>
+    
+	<style name="textAppearanceBase.Large">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:text">@string/text_app_large</item>
+    </style>
+
+    <style name="textAppearanceBase.Large.Blue">
+        <item name="android:textColor">@color/yi_text_blue1</item>
+    </style>
+    
+    <style name="textAppearanceBase.Large.Red">
+        <item name="android:textColor">@color/yi_text_red1</item>
+    </style>
+
+    <style name="textAppearanceBase.Large.Grey1">
+        <item name="android:textColor">@color/yi_text_grey1</item>
+    </style>
+
+    <style name="textAppearanceBase.Large.Grey2">
+        <item name="android:textColor">@color/yi_text_grey2</item>
+    </style>
+
+</resources>

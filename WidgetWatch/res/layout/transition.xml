@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout01" 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="20dip">
+
+	<Button android:id="@+id/btn_normal" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/normal" >
+	</Button>
+
+	<Button android:id="@+id/btn_add"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 		
+		android:text="@string/add" >
+	</Button>
+
+	<Button android:id="@+id/btn_rotation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 		
+		android:text="@string/rotation" >
+	</Button>
+	
+	<Button android:id="@+id/btn_rotation_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 		
+		android:text="@string/rotation" >
+	</Button>
+	
+	<Button android:id="@+id/btn_overshoot"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 		
+		android:text="@string/rotation" >
+	</Button>
+	
+	<EditText android:id="@+id/tension"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="number" >
+	</EditText>
+	
+	
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="100dip"  >
+	</Button>	
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="100dip"  >
+	</Button>	
+
+</LinearLayout>
+

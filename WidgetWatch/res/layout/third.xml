@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <Button 
+            android:id="@+id/datePickerDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/datepicker" />
+    
+    <Button 
+            android:id="@+id/timePickerDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timepicker" />
+    
+    <Button 
+            android:id="@+id/Expandable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expandable" />
+
+</LinearLayout>

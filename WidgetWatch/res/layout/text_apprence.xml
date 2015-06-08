@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical"
+        android:gravity="center_horizontal"
+		android:layout_width="match_parent">
+		
+		<yi.widget.BaiduEditText android:id="@+id/EditText01" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:hint="@string/text_entry" >
+		</yi.widget.BaiduEditText>
+
+		<yi.widget.BaiduEditText android:id="@+id/EditText02" 
+			android:layout_height="wrap_content"
+			android:layout_width="200dip"
+			android:hint="@string/text_entry" 
+			style="?attr/textEntryStyleShadow" >
+		</yi.widget.BaiduEditText>
+
+		<EditText android:id="@+id/EditText03" 
+			android:layout_height="wrap_content"
+            android:paddingLeft="40dip"
+			android:hint="@string/text_entry" 
+            android:selectAllOnFocus="true"
+			android:layout_width="match_parent">
+		</EditText>
+		
+		<EditText android:id="@+id/EditText04" 
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent" 
+			android:hint="@string/text_entry"
+            android:paddingLeft="60dip"
+			style="?attr/textEntryStyleShadow">
+		</EditText>
+	
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:id="@+id/btn_enable"
+				android:text="@string/enable_all">
+			</Button>
+			
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:id="@+id/btn_disable"
+				android:text="@string/disable_all">
+			</Button>
+
+		</LinearLayout>
+
+		<!-- Nomal -->
+		
+		<TextView android:id="@+id/TextView01" 
+			style="@style/textAppearanceBase.Small">
+		</TextView>
+		<TextView android:id="@+id/TextView02" 
+			style="@style/textAppearanceBase.Normal">
+		</TextView>
+		<TextView android:id="@+id/TextView03" 
+			style="@style/textAppearanceBase.Medium">
+		</TextView>		
+
+		<TextView android:id="@+id/TextView05" 
+			style="@style/textAppearanceBase.Large">
+		</TextView>
+		<TextView android:id="@+id/TextView04" 
+			style="@style/textAppearanceBase.Big">
+		</TextView>
+
+		<!-- Grey1-->
+
+		<TextView android:id="@+id/TextView11" 
+			style="@style/textAppearanceBase.Small.Grey1">
+		</TextView>
+		<TextView android:id="@+id/TextView12" 
+			style="@style/textAppearanceBase.Normal.Grey1">
+		</TextView>
+		<TextView android:id="@+id/TextView13" 
+			style="@style/textAppearanceBase.Medium.Grey1">
+		</TextView>		
+
+		<TextView android:id="@+id/TextView15" 
+			style="@style/textAppearanceBase.Large.Grey1">
+		</TextView>
+		<TextView android:id="@+id/TextView14" 
+			style="@style/textAppearanceBase.Big.Grey1">
+		</TextView>
+
+		<!-- Grey2-->
+
+		<TextView android:id="@+id/TextView21" 
+			style="@style/textAppearanceBase.Small.Grey2">
+		</TextView>
+		<TextView android:id="@+id/TextView22" 
+			style="@style/textAppearanceBase.Normal.Grey2">
+		</TextView>
+		<TextView android:id="@+id/TextView23" 
+			style="@style/textAppearanceBase.Medium.Grey2">
+		</TextView>		
+
+		<TextView android:id="@+id/TextView25" 
+			style="@style/textAppearanceBase.Large.Grey2">
+		</TextView>
+		<TextView android:id="@+id/TextView24" 
+			style="@style/textAppearanceBase.Big.Grey2">
+		</TextView>
+		<!-- Red-->
+
+		<TextView android:id="@+id/TextView31" 
+			style="@style/textAppearanceBase.Small.Red">
+		</TextView>
+		<TextView android:id="@+id/TextView32" 
+			style="@style/textAppearanceBase.Normal.Red">
+		</TextView>
+		<TextView android:id="@+id/TextView33" 
+			style="@style/textAppearanceBase.Medium.Red">
+		</TextView>		
+
+		<TextView android:id="@+id/TextView35" 
+			style="@style/textAppearanceBase.Large.Red">
+		</TextView>
+		<TextView android:id="@+id/TextView34" 
+			style="@style/textAppearanceBase.Big.Red">
+		</TextView>
+
+		<!-- Blue-->
+
+		<TextView android:id="@+id/TextView41" 
+			style="@style/textAppearanceBase.Small.Blue">
+		</TextView>
+		<TextView android:id="@+id/TextView42" 
+			style="@style/textAppearanceBase.Normal.Blue">
+		</TextView>
+		<TextView android:id="@+id/TextView43" 
+			style="@style/textAppearanceBase.Medium.Blue">
+		</TextView>		
+
+		<TextView android:id="@+id/TextView45" 
+			style="@style/textAppearanceBase.Large.Blue">
+		</TextView>
+		<TextView android:id="@+id/TextView44" 
+			style="@style/textAppearanceBase.Big.Blue">
+		</TextView>
+
+		<LinearLayout android:id="@+id/LinearLayout03"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="#FF666666">
+			
+			<TextView android:id="@+id/TextView51" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text="@string/text_app_small"
+				style="?android:attr/textAppearanceSmallInverse">
+			</TextView>
+			
+			<TextView android:id="@+id/TextView52" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/text_app_normal"
+				style="?attr/textAppearanceNormalInverse">
+			</TextView>
+						
+			<TextView android:id="@+id/TextView53" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/text_app_medium"
+				style="?android:attr/textAppearanceMediumInverse">
+			</TextView>
+						
+			<TextView android:id="@+id/TextView54" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text="@string/text_app_large"
+				style="?android:attr/textAppearanceLargeInverse">
+			</TextView>
+						
+			<TextView android:id="@+id/TextView55" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/text_app_big"
+				style="?attr/textAppearanceBigInverse">
+			</TextView>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/LinearLayout04"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+									
+			<TextView android:id="@+id/TextView61" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text="@string/text_app_small"
+				style="?attr/textAppearanceSmallShadow">
+			</TextView>
+			
+			<TextView android:id="@+id/TextView62" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/text_app_normal"
+				style="?attr/textAppearanceNormalShadow">
+			</TextView>
+						
+			<TextView android:id="@+id/TextView63" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/text_app_medium"
+				style="?attr/textAppearanceMediumShadow">
+			</TextView>
+						
+			<TextView android:id="@+id/TextView64" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/text_app_large"
+				style="?attr/textAppearanceLargeShadow">
+			</TextView>
+						
+			<TextView android:id="@+id/TextView65" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text="@string/text_app_big"
+				style="?attr/textAppearanceBigShadow">
+			</TextView>
+			
+		</LinearLayout>
+
+	
+	</LinearLayout>
+
+</ScrollView>

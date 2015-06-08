@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baidu.widgets"
+    android:installLocation="auto">
+
+    <uses-sdk android:minSdkVersion="15" />
+    <application android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.DeviceDefault.Light.DarkActionBar"
+        >
+        <activity android:name=".WidgetWatch"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.baidu.widget.next.NextActivity"
+            android:label="8.next/1.NextActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+               <!-- <category android:name="android.intent.category.LAUNCHER" />--> 
+                 <category android:name="com.baidu.widgets.CATEGORY_TEST" />  
+            </intent-filter>
+            <meta-data android:name="actionbar.tab"
+                android:value="first" />
+        </activity>
+        
+         <activity
+            android:name="com.baidu.widget.next.ActionBarTitleActivity"
+             android:label="8.next/2.titleStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.baidu.widget.next.PerferencesXML"
+            android:label="8.next/3.prefer"
+            android:theme="@style/Theme.DeviceDefault.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="com.baidu.widget.next.NextActivity$SecondaryActionTabActivity"
+                android:label="8.next/4.SecondaryActionTab">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+            <meta-data android:name="actionbar.tab"
+                android:value="secondary" />
+        </activity>
+        
+           <activity android:name="com.baidu.widget.next.SearchViewFilterMode"
+                android:label="8.next/5.SearchViewFilterMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Buttons -->
+        <activity android:name=".basic.Buttons" android:label="1. Basic/1. Buttons">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".basic.Texts"
+            android:label="1. Basic/2. Texts">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".basic.ProgressBar1" android:label="1. Basic/3. Progress Bars/1. Incremental">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".basic.ProgressBar2" android:label="1. Basic/3. Progress Bars/2. Smooth">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".basic.ProgressBar3" android:label="1. Basic/3. Progress Bars/3. Dialogs">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".basic.ProgressBar4" android:label="1. Basic/3. Progress Bars/3. Title Bar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".basic.DateTime" android:label="1. Basic/4. Date Time">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".basic.Misc"
+            android:label="1. Basic/9. Misc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".basic.TextSwitcher1" android:label="1. Basic/5. Text Switcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".basic.ImageSwitcher1" android:label="1. Basic/6. Image Switcher and Gallery">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".basic.WebViewDemo" android:label="1. Basic/7. WebView Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <!--  Lists -->
+        <activity android:name=".lists.SingleChoiceList" android:label="2. Lists/1. Single Choice">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".lists.MultiChoiceList" android:label="2. Lists/2. Multi Choice">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name=".lists.SimpleOneLine" android:label="2. Lists/3. Simple One Line">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>  -->
+        <activity android:name=".lists.SimpleTwoLine1" android:label="2. Lists/3. Simple Two Line Small(Contacts Required)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".lists.SimpleTwoLine2" android:label="2. Lists/4. Simple Two Line Large(Contacts Required)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name=".lists.Expandable1" android:label="2. Lists/6. Expandable One Line">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>  -->
+        <activity android:name=".lists.Expandable2" android:label="2. Lists/5. Expandable Two Line">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".lists.Checkable" android:label="2. Lists/6. Checkable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+    <!-- Dialogs -->
+        <activity android:name=".dialogs.AlertDialogs"
+            android:label="3. Dialogs"
+            android:windowSoftInputMode="adjustResize"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+    <!-- Prefers -->
+        <activity android:name=".perferences.PerferencesXML"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Theme.DeviceDefault.Light.DarkActionBar"
+            android:label="4. Preferences">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+    <!-- Menus -->
+        <activity android:name=".menus.MenusXML" android:label="5. Menus">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+    <!-- Yi Features -->
+    <!-- Apptitle -->
+   		<!-- 
+        <activity android:name=".rice.AppTitle"
+            android:label="6. Yi Features/1. App Title(deprecated)/1. App Title(custom)"
+            android:theme="@style/customTitleTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rice.AppTitle1"
+            android:label="6. Yi Features/1. App Title(deprecated)/2. App Title(new api)"
+            android:theme="@yi:style/Yi.Theme.AppTitle"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".rice.AppTitle2"
+            android:label="6. Yi Features/1. App Title(deprecated)/3. App Title with button group"
+            android:theme="@yi:style/Yi.Theme.AppTitle"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rice.AppTitleUser"
+            android:label="6. Yi Features/1. App Title/4. User defined App Title "
+            android:theme="@yi:style/Yi.Theme.AppTitle"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rice.RiceButtons"
+            android:label="6. Yi Features/2. Yi Buttons(deprecated)"
+            android:theme="@yi:style/Yi.Theme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rice.ButtonGroups"
+            android:label="6. Yi Features/3. ButtonGroups BottomBar(deprecated)"
+            android:theme="@yi:style/Yi.Theme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+		 -->
+        <activity android:name=".rice.CheckableListView"
+            android:label="6. Yi Features/1. Checkable ListView"
+            android:theme="@style/Yi.Theme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".rice.GridViewLayoutActivity"
+            android:label="6. Yi Features/2. Checkable GridView"
+            android:theme="@style/Yi.Theme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rice.ListItemLayouts"
+            android:label="6. Yi Features/3. ListItem Layouts"
+            android:theme="@style/Yi.Theme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <!-- 
+	    <activity android:name=".rice.TabBar"
+            android:label="6. Yi Features/7. Tab Bar(deprecated)"
+            android:theme="@yi:style/Yi.Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rice.FirstTab"
+            android:label="First Tab"
+            android:theme="@yi:style/Yi.Theme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.TAB_TEST" />
+            </intent-filter>
+        </activity>
+         
+
+	    <activity android:name=".rice.SecondTab"
+            android:theme="@yi:style/Yi.Theme"
+            android:label="Second Tab">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.TAB_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rice.FunctionBarTest"
+            android:theme="@yi:style/Yi.Theme"
+            android:label="6. Yi Features/8. FunctionBar(deprecated)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+		-->
+		
+        <activity android:name=".rice.Indicators"
+            android:theme="@style/Yi.Theme"
+            android:label="6. Yi Features/4. Indicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rice.TextApprence"
+            android:theme="@style/Yi.Theme"
+            android:label="6. Yi Features/5. Text Apperence">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+		
+        <!-- 
+        <activity android:name=".rice.SwitchPreferenceDemo"
+            android:theme="@yi:style/Yi.Theme"
+            android:label="6. Yi Features/b. SwitcherPreference (deprecated)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rice.DateAndTimeDemo"
+            android:theme="@yi:style/Yi.Theme"
+            android:label="6. Yi Features/c. Date And Time widget(deprecated)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+		 -->
+        <!-- the new widget and new view feature from 2.3 to 4.0 -->
+        <activity android:name=".ics.SwitchDemo"
+            android:label="7. 3.0~4.0 new/1. Switch Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ics.SearchViewDemo"
+            android:label="7. 3.0~4.0 new/2. SearchView Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable_demo" />
+        </activity>
+
+        <activity android:name=".ics.ActionBarDemo"
+            android:label="7. 3.0~4.0 new/3. ActionBar Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ics.ActionBarSplit"
+            android:label="7. 3.0~4.0 new/4. Split ActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <!-- activity android:name=".ics.ActionBarTabTop"
+            android:label="7. 3.0~4.0 new/4. ActionBar Tab Top"
+            android:theme="@yi:style/Yi.Theme.Light.ActionbarTabTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity-->
+
+        <activity android:name=".ics.GridLayoutDemo"
+            android:label="7. 3.0~4.0 new/5. GridLayout Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ics.PopupMenuDemo"
+            android:label="7. 3.0~4.0 new/6. PopupMenu Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ics.ListPopupWindowDemo"
+            android:label="7. 3.0~4.0 new/7. ListPopupWindow Demo"
+            android:theme="@style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ics.CalendarViewDemo"
+            android:label="7. 3.0~4.0 new/8. CalendarView Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ics.NumberPickerDemo"
+            android:label="7. 3.0~4.0 new/9. NumberPicker Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.baidu.widgets.CATEGORY_TEST" />
+            </intent-filter>
+        </activity>
+
+        
+        
+        <!-- Provides search suggestions for words and their definitions. -->
+        <provider android:name=".ics.SearchSuggProvider"
+                  android:authorities="com.baidu.widgets.ics.SearchSuggProvider" />
+
+        <!-- end -->
+        <activity android:name=".rice.ShowListItem"
+            android:theme="@style/Yi.Theme" >
+        </activity>
+
+        <meta-data android:name="BaiduMobAd_APP_ID" android:value="my_app_id" />
+        <meta-data android:name="BaiduMobAd_APP_SEC" android:value="debug" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+</manifest>
